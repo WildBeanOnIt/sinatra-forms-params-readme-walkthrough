@@ -17,6 +17,7 @@ class App < Sinatra::Base
 
   post '/run_or_walk' do 
     params.to_s
+    "You prefer to #{params[:run_or_walk]} for #{params[:time]}"
   end
 
 end
